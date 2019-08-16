@@ -5,7 +5,14 @@
   margin: 10px;
   
 }
-.roundborder(){
-  border-radius:5%;
-    overflow:hidden;
+
+
+.round-borders (@radius) {
+  border-radius: @radius;
+  overflow: hidden;
+}
+.layout(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
 }
