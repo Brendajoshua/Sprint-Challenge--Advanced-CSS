@@ -11,8 +11,8 @@
   border-radius: @radius;
   overflow: hidden;
 }
-.layout(@justify, @align){
+.layout(@wrap, @direction){
 	display: flex;
-	justify-content: @justify;
-	align-items: @align;
+	flex-direction: @direction;
+	flex-wrap: @wrap;
 }
