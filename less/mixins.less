@@ -7,9 +7,9 @@
 }
 
 
-.round-borders (@radius) {
+.round-borders (@radius, @flow) {
   border-radius: @radius;
-  overflow: hidden;
+  overflow: @flow;
 }
 .layout(@wrap, @direction){
 	display: flex;
