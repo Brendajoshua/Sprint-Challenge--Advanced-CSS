@@ -4,7 +4,8 @@
     display: flex;
     width:900px;
     margin: auto;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     flex-direction: column;
     border: 1px solid red;
 
@@ -16,17 +17,16 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
+      
       .header-image{
         width:100%;
+      
       
     .lift-off{
       display: flex;
       margin: 5%;
-
     h2 {
       padding: 15px;
-      font-size: 0.5rem;
     }
 
     p {
@@ -39,7 +39,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
 
     img {
       width: 28%;
@@ -66,10 +65,11 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 
     .walk-text {
-      width: 50%;
+      width: 48%;
 
       h3 {
         margin-bottom: 10px;
