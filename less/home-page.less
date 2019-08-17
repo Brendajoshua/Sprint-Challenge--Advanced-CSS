@@ -7,7 +7,11 @@
     flex-direction: column;
     border-left: 40px solid @border-real;
     border-right: 40px solid @border-real;
-
+    @media @phone{
+      width:100%;
+      margin: 2rem;
+      border: none;
+    }
 
     .image-container{
       display: flex;
@@ -17,9 +21,12 @@
       .header-image{
         width:100%;
         padding-bottom: 15px;
-      padding-left: 20px;
-      padding-right: 20px;
-      object-fit: contain;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        @media @phone{
+          width: 100%;
+        }
       }
       
     .lift-off{
@@ -30,7 +37,9 @@
     h2 {
       font-size: 2rem;
     }
-
+@media @phone{
+  .layout(no-wrap, column);
+}
   }
 }
   }
@@ -40,12 +49,36 @@
     justify-content: space-evenly;
     padding:15px;
     margin: 10px;
-    .space-img{
+
+    .space-img1{
       height:150px;
     width:200px;  
     .round-borders (12px, hidden);
+    @media @phone {
+      height: 100%;
+      width: 100%;
+      .round-borders (8px, hidden);
+    }
+    }
+    .space-img2{
+      height:150px;
+    width:200px;  
+    .round-borders (12px, hidden);
+    
+   @media @phone{
+      display:none;
     }
   }
+    .space-img3{
+      height:150px;
+    width:200px;  
+    .round-borders (12px, hidden);
+    @media @phone{
+      display:none;
+    }
+    }
+  }
+
   .visit-planets{
     display: flex;
     .layout(wrap, row);
@@ -60,12 +93,23 @@
     justify-content: space-between;
     padding:15px;
     margin: 10px;
+    @media @phone {
+      display: flex;
+      .layout(no-wrap, column-reverse);
+      justify-content: space-evenly;
+      padding:15px;
+      margin: 10px;
+    }
     .walk-text{
       width:48%;
-      
+      @media @phone{
+        width: 100%;
+        margin-top: 20px;
+      }
       .btn{
         background-color:@btn-bg-color;
         border: none;
+        cursor: pointer;
         color: @sea-shell;
         padding: 15px 32px;
         text-align: center;
@@ -80,16 +124,24 @@
           &:hover {
             color: darken(@sea-shell, 5%)
           }
+          
       }
-    }
+
+    
     .walk-img{
       width:48%;
       width: 310px;
       height:200px;
       border-radius:5%;
       overflow:hidden;
+      @media @phone{
+        width: 100%;
+      }
     }
+    
   }
+}
+  
   
 
 
