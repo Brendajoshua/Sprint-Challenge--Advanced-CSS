@@ -5,34 +5,55 @@
   <meta charset="utf-8">
 
   <title>SpaceWalkers</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
+  <link rel="stylesheet/less" type="text/css" href="./less/index.less"/>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-
+  <div class="parent-container"> 
  <!-- navigation code here -->
+ <header class="navcontainer">
+  <div class="nav-text">
+    <h1>SpaceWalkers</h1>
+  </div>
+  <nav class="nav">
+    <a href="#Home">Home</a>
+    <a href="#About us">About us</a>
+    <a href="#Blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#Sign In">Sign In</a>
+  </nav>
+  </header>
 
-  <div class="container home">
-
-    <header class="intro">
-       <!-- image code here -->
-
-      <h2>Lift Off</h2>
     
+       <!-- image code here -->
+       
+<div class="container-home"></div>
+  <div class="image-container">
+      <div class="header-image">
+         <img src="img/main-header.png" class="main-header" alt="sky image">
+          </div>
+            <div class="lift-off">
+              <h2>Lift Off</h2>
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
-    </header>
+  </div>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+    <div class="space-img1">
+      <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+    </div>
+    <div class="space-img2">
         <img src="img/sky.png" class="sky" alt="Space sky image">
+      </div>
+      <div class="space-img3">
         <img src="img/launch.png" class="launch" alt="Launching rocket">
-    </section>
+      </div>
+      </section>
    
     <section class="visit-planets">
      
@@ -67,5 +88,8 @@
     </footer>
 
   </div>
+</div>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 </body>
 </html>

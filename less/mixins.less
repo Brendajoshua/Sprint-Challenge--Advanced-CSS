@@ -1,1 +1,18 @@
 // Mixins Here
+.flex-centered(){
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  
+}
+
+
+.round-borders (@radius, @flow) {
+  border-radius: @radius;
+  overflow: @flow;
+}
+.layout(@wrap, @direction){
+	display: flex;
+	flex-direction: @direction;
+	flex-wrap: @wrap;
+}
